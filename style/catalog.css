@@ -61,38 +61,32 @@ body{
 }
 .header__right{
     max-width: 100%;
+    margin-left: auto;
 }
-.header__right .user{
+.header__right .user {
     margin-left: 23px;
 }
+
 @media (max-width:846px) {
-    .user:first-child{
+    .header__right .user {
         width: 16px;
-        height: 18px;   
-    }
-    .user:last-child{
-        width: 40px;
-        height: 18px;   
+        height: 18px;
     }
 }
+
 @media (max-width:576px) {
-    .user:first-child{
+    .header__right .user {
         width: 12px;
-        height: 16px;   
-    }
-    .user:last-child{
-        width: 30px;
-        height: 16px;   
+        height: 16px;
+        margin-left: 10px;
     }
 }
+
 @media (max-width:420px) {
-    .user:first-child{
+    .header__right .user {
         width: 10px;
-        height: 14px;   
-    }
-    .user:last-child{
-        width: 26px;
-        height: 14px;   
+        height: 14px;
+        margin-left: 0px;
     }
 }
 
@@ -227,7 +221,12 @@ body{
     font-size: 16px;
     line-height: 22px;
     color: #757575;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.categ_item:hover{
+    background: #D9E3EF;
+
 }
 .list{
     font-size: 16px;
@@ -276,6 +275,8 @@ body{
     height: 25px;
     border-radius: 4px;
     box-sizing: border-box;
+    padding: 5px;
+
 }
 .checked{
     font-size: 12px;
@@ -306,7 +307,7 @@ body{
 .catalog{
     margin-left: 80px;
 }
-.catalog .style{
+.catalog .style {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -315,6 +316,14 @@ body{
     text-transform: uppercase;
     color: #757575;
     margin-top: 30px;
+}
+.catalog .style a:hover{
+    border-bottom: 2px solid #000;  
+
+}
+.catalog .shoes img:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 .catalog .price{
     display: block;
