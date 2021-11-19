@@ -56,7 +56,8 @@ body{
     .header__left .logo{
         margin-left: 100px;        
     }
-}@media (max-width:690px) {
+}
+@media (max-width:690px) {
     .header__left .logo{
         width: 80px;
         margin-left: 30px;  
@@ -949,6 +950,13 @@ body{
     margin-top: 108px;
     cursor: pointer;    
 }
+@media (max-width:1141px) { 
+.watch{
+    margin-top: 50px;
+    padding-bottom: 120px;
+    box-sizing:border-box;
+    }    
+} 
 @media (max-width:722px) {  
     .watch{
         margin-top: 20px;
@@ -1049,6 +1057,7 @@ body{
 
 .menu-footer{
     display: flex;
+    justify-content: center;
 }
 @media (max-width:1180px) {
     .menu-footer{
@@ -1087,7 +1096,6 @@ body{
         align-items: center;
         justify-content: center;
     }
-
     .navigation{
         margin-left: 0;
     }
@@ -1125,6 +1133,6 @@ body{
 }
 @media (max-width:580px) {
     .menu-footer_list{
-        margin: 15px auto 0px;
+        margin: 10px;
     }
 }
